@@ -1,6 +1,6 @@
 # Compile a useful build of ffmpeg
 
-It’s always been a bit of pain getting a working build of ffmpeg with
+It’s always been a bit of a pain getting a working build of ffmpeg with
 proprietary libraries enabled. Homebrew, actually, got quite close to being
 painless until I got fed up with how it absolutely littered the working
 environment with build dependencies. There’s no dependency tracing in Homebrew,
