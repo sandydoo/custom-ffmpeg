@@ -13,6 +13,7 @@
         };
 
         overrides = {
+          ffmpeg = pkgs.ffmpeg_5;
           nonfreeLicensing = true;
           fdkaacExtlib = true;
         };
