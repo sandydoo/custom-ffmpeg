@@ -13,13 +13,13 @@
         };
 
         overrides = {
-          ffmpeg = pkgs.ffmpeg_5;
-          nonfreeLicensing = true;
-          fdkaacExtlib = true;
+          withFullDeps = true;
+          withUnfree = true;
+          withFdkAac = true;
         };
       in
       rec {
-        packages.ffmpeg-custom = pkgs.ffmpeg-full.override overrides;
+        packages.ffmpeg-custom = pkgs.ffmpeg.override overrides;
         defaultPackage = packages.ffmpeg-custom;
       }
     );
